@@ -1,0 +1,14 @@
+{
+  "name": "orchestra-types",
+  "version": "1.0.0",
+  "description": "Typescript definitions for Orchestra services",
+  "scripts": {
+    "build": "tsc"
+  },
+  "author": "",
+  "private": true,
+  "license": "UNLICENSED",
+  "dependencies": {
+    "typescript": "^5.0.4"
+  }
+}
