@@ -1,11 +1,6 @@
 name: eslint
 
-on:
-  pull_request:
-    paths:
-      - "lib/**"
-    branches:
-      - main
+on: push
 
 defaults:
   run:
