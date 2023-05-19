@@ -214,8 +214,8 @@ export interface InstreamPlayer {
   lastAuditTrailId?: string;
   production?: PlayerSettings;
   staging?: PlayerSettings;
-  configsArray: PlayerConfig[];
-  configs?: unknown;
+  configsArray: unknown[];
+  configs?: PlayerConfig;
   configsInternal: unknown;
   type: PlayerType.INSTREAM;
   usage?: { [key: string]: number };
