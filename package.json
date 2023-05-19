@@ -1,14 +1,10 @@
 {
   "name": "orchestra-types",
-  "version": "1.0.0",
   "description": "Typescript definitions for Orchestra services",
-  "scripts": {
-    "build": "tsc"
-  },
-  "author": "",
-  "private": true,
+  "version": "0.0.1",
   "license": "UNLICENSED",
-  "dependencies": {
-    "typescript": "^5.0.4"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NovoRoll/orchestra-types.git"
   }
 }
