@@ -6,5 +6,6 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/NovoRoll/orchestra-types.git"
-  }
+  },
+  "types": "./lib"
 }
