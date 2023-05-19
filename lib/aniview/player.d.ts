@@ -215,7 +215,7 @@ export interface InstreamPlayer {
   production?: PlayerSettings;
   staging?: PlayerSettings;
   configsArray: unknown[];
-  configs?: PlayerConfig;
+  configs?: PlayerConfig[];
   configsInternal: unknown;
   type: PlayerType.INSTREAM;
   usage?: { [key: string]: number };
