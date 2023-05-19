@@ -3,7 +3,7 @@ import { PriceException } from "./common";
 export interface AdSource {
   cpm?: number;
   averageCpm?: number;
-  cpr: any;
+  cpr: unknown;
   fpOptimization?: boolean;
   haCpm: unknown;
   flight?: {
