@@ -3,7 +3,7 @@
     "module": "commonjs",
     "rootDir": "./src",
     "declaration": true,
-    "emitDeclarationOnly": true,
+    "sourceMap": true,
     "removeComments": true,
     "outDir": "./lib",
     "strict": true,
