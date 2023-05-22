@@ -8,6 +8,5 @@
 
 1. Create your <feature_branch>
 2. Upload your changes to your <feature_branch>
-3. Get the last commit hash from your <feature_branch>
-4. Add to your destination package.json commit hash as github:NovoRoll/orchestra-types#<commit_hash>
-5. Reinstall node_modules in your destination repo with updated orchestra-types dependence.
+3. Add to your destination package.json commit hash as github:NovoRoll/orchestra-types#<feature_branch>
+4. Reinstall node_modules in your destination repo with updated orchestra-types dependence.
