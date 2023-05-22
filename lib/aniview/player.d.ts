@@ -99,6 +99,73 @@ export interface PlayerSettings {
 
 export type Player = OutstreamPlayer | InstreamPlayer;
 
+export interface PlayerConfig {
+  targeting: {
+    domain: unknown;
+    geography: unknown;
+    geographyZip: unknown;
+    geographyCoor: unknown;
+    device: unknown;
+    os: unknown;
+    tag: unknown;
+    playerSize: unknown;
+    targetPlatform: number;
+    dow: unknown;
+    adtxt: unknown;
+    customRules: unknown;
+    idfa: unknown;
+    euConsent: unknown;
+    ccpa: unknown;
+    buyeruid: unknown;
+    euConsentRtb: unknown;
+    slot: unknown;
+    placement: unknown;
+    customTargeting: unknown;
+    bot: unknown;
+  };
+  playerTag: {
+    template: string;
+    tabletAsDesktop: unknown;
+    channel: string;
+    publisher: unknown;
+    position: {
+      type?: number;
+      value?: string;
+      posCounter?: number;
+      useDifferent: boolean;
+      posType: boolean;
+    };
+    posDfp1x1: boolean;
+    overrideFunctions: {
+      selected: Array<unknown>;
+      unique: unknown;
+      findWin: unknown;
+      postCreate: unknown;
+      retry: unknown;
+      create: unknown;
+      position: unknown;
+      load: unknown;
+      postStart: unknown;
+      getAttr: unknown;
+      start: unknown;
+      preRun: unknown;
+      run: unknown;
+      target: unknown;
+      track: unknown;
+      fetchContent: unknown;
+      init: unknown;
+    };
+    overrideExtensions: unknown;
+    gpid: unknown;
+    ref1: unknown;
+    contentPlayerBaseURI: unknown;
+    adPlayerBaseURI: unknown;
+  };
+  abTest: string;
+  sp: number;
+  customTemplate: unknown;
+}
+
 export interface OutstreamPlayer {
   id: unknown;
   _id: {
@@ -119,7 +186,7 @@ export interface OutstreamPlayer {
   production?: PlayerSettings;
   staging?: PlayerSettings;
   configsArray: unknown;
-  configs?: unknown;
+  configs?: PlayerConfig[];
   configsInternal: unknown;
   type: PlayerType.OUTSTREAM;
   usage?: { [key: string]: number };
@@ -148,7 +215,7 @@ export interface InstreamPlayer {
   production?: PlayerSettings;
   staging?: PlayerSettings;
   configsArray: unknown;
-  configs?: unknown;
+  configs?: PlayerConfig[];
   configsInternal: unknown;
   type: PlayerType.INSTREAM;
   usage?: { [key: string]: number };
