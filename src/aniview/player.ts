@@ -1,12 +1,15 @@
 import { BreakingAdsMode } from "./common";
-export declare enum PlayerType {
+
+export enum PlayerType {
   OUTSTREAM = 1,
   INSTREAM = 2,
 }
-export declare enum PlayerStatus {
+
+export enum PlayerStatus {
   ACTIVE = 1,
   ARCHIVED = 2,
 }
+
 export interface PlayerSettings {
   template: string;
   tabletAsDesktop: unknown;
@@ -93,7 +96,9 @@ export interface PlayerSettings {
   contentPlayerBaseURI?: string;
   adPlayerBaseURI?: string;
 }
+
 export type Player = OutstreamPlayer | InstreamPlayer;
+
 export interface PlayerConfig {
   targeting: {
     domain: unknown;
@@ -160,6 +165,7 @@ export interface PlayerConfig {
   sp: number;
   customTemplate: unknown;
 }
+
 export interface OutstreamPlayer {
   id: unknown;
   _id: {
@@ -183,13 +189,12 @@ export interface OutstreamPlayer {
   configs?: PlayerConfig[];
   configsInternal: unknown;
   type: PlayerType.OUTSTREAM;
-  usage?: {
-    [key: string]: number;
-  };
+  usage?: { [key: string]: number };
   isDeployed: boolean;
   isSessionIdEnabled: unknown;
   customTemplate: unknown;
 }
+
 export interface InstreamPlayer {
   id?: string;
   _id: {
@@ -213,9 +218,7 @@ export interface InstreamPlayer {
   configs?: PlayerConfig[];
   configsInternal: unknown;
   type: PlayerType.INSTREAM;
-  usage?: {
-    [key: string]: number;
-  };
+  usage?: { [key: string]: number };
   isDeployed: boolean;
   isSessionIdEnabled?: boolean;
   customTemplate?: unknown;

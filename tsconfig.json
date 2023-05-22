@@ -1,12 +1,14 @@
 {
   "compilerOptions": {
+    "module": "commonjs",
     "rootDir": "./src",
     "declaration": true,
-    "emitDeclarationOnly": true,
+    "sourceMap": true,
     "removeComments": true,
-    "declarationDir": "./dist",
+    "outDir": "./lib",
     "strict": true,
     "strictFunctionTypes": true,
     "noImplicitAny": true
-  }
+  },
+  "include": ["./src"]
 }

@@ -1,7 +1,8 @@
-export declare enum PayingMethodType {
+export enum PayingMethodType {
   RevShare = 0,
   FixedCpm = 1,
 }
+
 export interface PriceException {
   max?: unknown;
   type?: PayingMethodType;
@@ -9,6 +10,7 @@ export interface PriceException {
   value?: number;
   cutModel?: number;
 }
+
 export interface Accounting {
   type: PayingMethodType;
   enabled?: null;
@@ -16,11 +18,13 @@ export interface Accounting {
   max?: null;
   cutModel?: null;
 }
-export declare enum BreakingAdsMode {
+
+export enum BreakingAdsMode {
   SLOT = 1,
   BREAKING_ADS = 2,
 }
-export declare enum ResizingMethod {
+
+export enum ResizingMethod {
   SCALE = 1,
   FIXED = 2,
 }

@@ -1,4 +1,5 @@
 import { Accounting, PriceException } from "./common";
+
 export interface PublisherConnection {
   id?: null;
   _id: {

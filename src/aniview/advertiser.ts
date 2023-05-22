@@ -1,4 +1,5 @@
 import { PriceException } from "./common";
+
 export interface Advertiser {
   email?: string;
   accountingFeeId?: string;

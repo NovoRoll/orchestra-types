@@ -1,4 +1,5 @@
 import { PriceException } from "./common";
+
 export interface AdSource {
   cpm?: number;
   averageCpm?: number;

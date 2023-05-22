@@ -13,7 +13,7 @@ export interface PublisherChannel {
     {
       id: string;
       priority: number;
-    },
+    }
   ];
   trackers: unknown;
   impcoc: unknown;

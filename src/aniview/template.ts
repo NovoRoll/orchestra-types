@@ -1,4 +1,5 @@
 import { BreakingAdsMode, ResizingMethod } from "./common";
+
 export interface Template<T extends TemplateContent> {
   id: unknown;
   _id: {
@@ -22,9 +23,11 @@ export interface Template<T extends TemplateContent> {
   staging: T;
   isDeployed: boolean;
 }
+
 export type TemplateContent =
   | OutstreamTemplateContent
   | InstreamTemplateContent;
+
 export interface InstreamTemplateContent {
   performance: {
     loop?: boolean;
@@ -234,6 +237,7 @@ export interface InstreamTemplateContent {
     startmidroll?: number;
   };
 }
+
 export interface OutstreamTemplateContent {
   performance: {
     loop?: boolean;
