@@ -1,1 +1,1 @@
-export { Aniview } from "./aniview";
+export * as Aniview from "./aniview";
