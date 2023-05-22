@@ -7,7 +7,8 @@
     "type": "git",
     "url": "git+https://github.com/NovoRoll/orchestra-types.git"
   },
-  "main": "./lib/index.ts",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
   "scripts": {
     "build": "tsc",
     "lint": "eslint . --ext .ts"
