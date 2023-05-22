@@ -10,3 +10,4 @@
 2. Upload your changes to your <feature_branch>
 3. Add to your destination package.json dependency specification as github:NovoRoll/orchestra-types#<feature_branch>
 4. Reinstall node_modules in your destination repo with updated orchestra-types dependency.
+5. If something goes wrong - delete your package-lock.json and reinstall dependencies again
