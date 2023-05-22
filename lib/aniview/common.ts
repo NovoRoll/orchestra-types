@@ -1,4 +1,4 @@
-export const enum PayingMethodType {
+export enum PayingMethodType {
   RevShare = 0,
   FixedCpm = 1,
 }
@@ -19,12 +19,12 @@ export interface Accounting {
   cutModel?: null;
 }
 
-export const enum BreakingAdsMode {
+export enum BreakingAdsMode {
   SLOT = 1,
   BREAKING_ADS = 2,
 }
 
-export const enum ResizingMethod {
+export enum ResizingMethod {
   SCALE = 1,
   FIXED = 2,
 }

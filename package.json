@@ -7,8 +7,7 @@
     "type": "git",
     "url": "git+https://github.com/NovoRoll/orchestra-types.git"
   },
-  "main": "./lib/aniview/index.ts",
-  "types": "./lib/aniview/index.ts",
+  "main": "./lib/index.ts",
   "scripts": {
     "build": "tsc",
     "lint": "eslint . --ext .ts"

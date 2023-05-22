@@ -1,11 +1,11 @@
 import { BreakingAdsMode } from "./common";
 
-export const enum PlayerType {
+export enum PlayerType {
   OUTSTREAM = 1,
   INSTREAM = 2,
 }
 
-export const enum PlayerStatus {
+export enum PlayerStatus {
   ACTIVE = 1,
   ARCHIVED = 2,
 }
