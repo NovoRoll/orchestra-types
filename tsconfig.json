@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "rootDir": "./src",
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "removeComments": true,
+    "declarationDir": "./dist",
+    "strict": true,
+    "strictFunctionTypes": true,
+    "noImplicitAny": true
+  }
+}
