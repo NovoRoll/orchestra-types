@@ -4,9 +4,10 @@
     "declaration": true,
     "emitDeclarationOnly": true,
     "removeComments": true,
-    "declarationDir": "./dist",
+    "outDir": "./lib",
     "strict": true,
     "strictFunctionTypes": true,
     "noImplicitAny": true
-  }
+  },
+  "include": ["./src"]
 }
