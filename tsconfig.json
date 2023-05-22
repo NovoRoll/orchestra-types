@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "rootDir": "./src",
+    "rootDir": "./lib/aniview",
     "declaration": true,
     // "emitDeclarationOnly": true,
     "removeComments": true,
