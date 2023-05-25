@@ -132,8 +132,8 @@ export interface OutstreamPlayer {
   restoreFrom: unknown;
   adsourceOriginId: unknown;
   lastAuditTrailId: unknown;
-  production?: PlayerSettings;
-  staging?: PlayerSettings;
+  production: PlayerSettings;
+  staging: PlayerSettings;
   configsArray: unknown;
   configs?: PlayerConfig[];
   configsInternal: unknown;
@@ -161,8 +161,8 @@ export interface InstreamPlayer {
   restoreFrom: unknown;
   adsourceOriginId?: string;
   lastAuditTrailId?: string;
-  production?: PlayerSettings;
-  staging?: PlayerSettings;
+  production: PlayerSettings;
+  staging: PlayerSettings;
   configsArray: unknown;
   configs?: PlayerConfig[];
   configsInternal: unknown;
