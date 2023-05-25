@@ -1,1 +1,1 @@
-{"version":3,"file":"index.js","sourceRoot":"","sources":["../../src/aniview/index.ts"],"names":[],"mappings":";;;AAIA,mCAOkB;AALhB,oGAAA,UAAU,OAAA;AACV,sGAAA,YAAY,OAAA;AAed,mCAMkB;AALhB,0GAAA,gBAAgB,OAAA;AAGhB,yGAAA,eAAe,OAAA;AACf,wGAAA,cAAc,OAAA"}
+{"version":3,"file":"index.js","sourceRoot":"","sources":["../../src/aniview/index.ts"],"names":[],"mappings":";;;AAIA,mCAUkB;AARhB,oGAAA,UAAU,OAAA;AACV,sGAAA,YAAY,OAAA;AAEZ,gHAAA,sBAAsB,OAAA;AAgBxB,mCAMkB;AALhB,0GAAA,gBAAgB,OAAA;AAGhB,yGAAA,eAAe,OAAA;AACf,wGAAA,cAAc,OAAA"}

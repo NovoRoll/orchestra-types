@@ -7,6 +7,9 @@ export {
   PlayerType,
   PlayerStatus,
   PlayerSettings,
+  PlayerOverrideFunction,
+  PlayerOverrideFunctionConfig,
+  PlayerOverrideFunctions,
   OutstreamPlayer,
   InstreamPlayer,
 } from "./player";
