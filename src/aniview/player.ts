@@ -10,7 +10,7 @@ export enum PlayerStatus {
   ARCHIVED = 2,
 }
 
-export enum PlayerOverrideFunction {
+export enum OverrideFunction {
   Unique = "unique",
   FindWin = "findWin",
   PostCreate = "postCreate",
@@ -29,14 +29,19 @@ export enum PlayerOverrideFunction {
   Init = "init",
 }
 
-export interface PlayerOverrideFunctionConfig {
+export interface OverrideFunctionConfig {
   value: string;
   isActive: boolean;
 }
 
-export type PlayerOverrideFunctions = {
+export type OverrideFunctionsData = Record<
+  OverrideFunction,
+  OverrideFunctionConfig
+>;
+
+export type OverrideFunctions = {
   selected: number[];
-} & Record<PlayerOverrideFunction, PlayerOverrideFunctionConfig>;
+} & OverrideFunctionsData;
 
 export interface PlayerSettings {
   template: string;
@@ -51,7 +56,7 @@ export interface PlayerSettings {
     posType?: boolean;
   };
   posDfp1x1?: boolean;
-  overrideFunctions: PlayerOverrideFunctions;
+  overrideFunctions: OverrideFunctions;
   overrideExtensions: unknown;
   gpid?: string;
   ref1?: unknown;
@@ -98,7 +103,7 @@ export interface PlayerConfig {
       posType: boolean;
     };
     posDfp1x1: boolean;
-    overrideFunctions: PlayerOverrideFunctions;
+    overrideFunctions: OverrideFunctions;
     overrideExtensions: unknown;
     gpid: unknown;
     ref1: unknown;
