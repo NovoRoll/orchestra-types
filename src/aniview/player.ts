@@ -29,16 +29,14 @@ export enum PlayerOverrideFunction {
   Init = "init",
 }
 
-export type PlayerOverrideFunctionConfig = {
-  [key in PlayerOverrideFunction]: {
-    value: unknown;
-    isActive: boolean;
-  };
-};
+export interface PlayerOverrideFunctionConfig {
+  value: string;
+  isActive: boolean;
+}
 
 export type PlayerOverrideFunctions = {
-  selected: unknown[];
-} & PlayerOverrideFunctionConfig;
+  selected: number[];
+} & Record<PlayerOverrideFunction, PlayerOverrideFunctionConfig>;
 
 export interface PlayerSettings {
   template: string;
