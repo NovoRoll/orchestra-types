@@ -31,7 +31,7 @@ export interface OverrideFunctionConfig {
 }
 export type OverrideFunctionsData = Record<
   OverrideFunction,
-  OverrideFunctionConfig
+  OverrideFunctionConfig | null
 >;
 export type OverrideFunctions = {
   selected: number[];
