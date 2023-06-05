@@ -1,4 +1,4 @@
-export interface AniviewResponse<T> {
+export interface Response<T> {
   data: T;
   errors?: Error[];
   meta?: {
