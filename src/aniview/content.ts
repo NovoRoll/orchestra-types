@@ -1,7 +1,4 @@
-export interface AniviewResponse<T> {
-  data: T;
-  errors?: Error[];
-}
+import type { AniviewResponse } from "./common";
 
 export interface RegisterLinks {
   registerLinks?: { id: string }[];

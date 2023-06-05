@@ -1,3 +1,11 @@
+export interface AniviewResponse<T> {
+  data: T;
+  errors?: Error[];
+  meta?: {
+    total?: number;
+  };
+}
+
 export enum PayingMethodType {
   RevShare = 0,
   FixedCpm = 1,

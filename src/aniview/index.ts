@@ -26,6 +26,7 @@ export {
   Accounting,
   BreakingAdsMode,
   ResizingMethod,
+  AniviewResponse,
 } from "./common";
 export {
   RegisterLinks,
@@ -33,7 +34,6 @@ export {
   UpdateVideo,
   DeleteVideos,
   Content,
-  AniviewResponse,
   RegisterLinksResponse,
   GetVideosResponse,
   UpdateVideoResponse,
