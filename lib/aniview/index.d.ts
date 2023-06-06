@@ -26,4 +26,17 @@ export {
   Accounting,
   BreakingAdsMode,
   ResizingMethod,
+  Response,
 } from "./common";
+export {
+  RegisterLinks,
+  GetVideos,
+  UpdateVideo,
+  DeleteVideos,
+  Content,
+  RegisterLinksResponse,
+  GetVideosResponse,
+  UpdateVideoResponse,
+  DeleteVideosResponse,
+} from "./content";
+export { Auth } from "./auth";
