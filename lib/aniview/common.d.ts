@@ -1,3 +1,10 @@
+export interface Response<T> {
+  data: T;
+  errors?: Error[];
+  meta?: {
+    total?: number;
+  };
+}
 export declare enum PayingMethodType {
   RevShare = 0,
   FixedCpm = 1,
