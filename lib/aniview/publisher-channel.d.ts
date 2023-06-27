@@ -1,3 +1,7 @@
+export declare enum PublisherChannelStatus {
+  ACTIVE = 1,
+  ARCHIVED = 2,
+}
 export interface PublisherChannel {
   instanceId: string;
   optimized: unknown;
@@ -38,7 +42,7 @@ export interface PublisherChannel {
   enableMbq: boolean;
   mbq: unknown;
   prp: unknown;
-  status: number;
+  status: PublisherChannelStatus;
   name: string;
   description: string;
   publisherId: string;
