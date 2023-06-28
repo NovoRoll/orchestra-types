@@ -7,11 +7,14 @@ export {
   PlayerType,
   PlayerStatus,
   PlayerSettings,
+  OverrideFunctionConfig,
+  OverrideFunctionsData,
+  OverrideFunctions,
   OutstreamPlayer,
   InstreamPlayer,
 } from "./player";
 export { Publisher } from "./publisher";
-export { PublisherChannel } from "./publisher-channel";
+export { PublisherChannel, PublisherChannelStatus } from "./publisher-channel";
 export { PublisherConnection } from "./publisher-connection";
 export { SupplyChannel } from "./supply-channel";
 export {

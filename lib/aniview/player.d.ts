@@ -7,6 +7,35 @@ export declare enum PlayerStatus {
   ACTIVE = 1,
   ARCHIVED = 2,
 }
+export declare enum OverrideFunction {
+  Unique = "unique",
+  FindWin = "findWin",
+  PostCreate = "postCreate",
+  Retry = "retry",
+  Create = "create",
+  Position = "position",
+  Load = "load",
+  PostStart = "postStart",
+  GetAttr = "getAttr",
+  Start = "start",
+  PreRun = "preRun",
+  Run = "run",
+  Target = "target",
+  Track = "track",
+  FetchContent = "fetchContent",
+  Init = "init",
+}
+export interface OverrideFunctionConfig {
+  value: string;
+  isActive: boolean;
+}
+export type OverrideFunctionsData = Record<
+  OverrideFunction,
+  OverrideFunctionConfig
+>;
+export type OverrideFunctions = {
+  selected: number[];
+} & OverrideFunctionsData;
 export interface PlayerSettings {
   template: string;
   tabletAsDesktop: unknown;
@@ -20,73 +49,7 @@ export interface PlayerSettings {
     posType?: boolean;
   };
   posDfp1x1?: boolean;
-  overrideFunctions: {
-    selected: unknown[];
-    unique?: {
-      value: unknown;
-      isActive: boolean;
-    };
-    findWin?: {
-      value: unknown;
-      isActive: boolean;
-    };
-    postCreate?: {
-      value: unknown;
-      isActive: boolean;
-    };
-    retry?: {
-      value: unknown;
-      isActive: boolean;
-    };
-    create?: {
-      value: unknown;
-      isActive: boolean;
-    };
-    position?: {
-      value: unknown;
-      isActive: boolean;
-    };
-    load?: {
-      value: unknown;
-      isActive: boolean;
-    };
-    postStart?: {
-      value: unknown;
-      isActive: boolean;
-    };
-    getAttr?: {
-      value: unknown;
-      isActive: boolean;
-    };
-    start?: {
-      value: unknown;
-      isActive: boolean;
-    };
-    preRun?: {
-      value?: string;
-      isActive: boolean;
-    };
-    run?: {
-      value: unknown;
-      isActive: boolean;
-    };
-    target?: {
-      value: unknown;
-      isActive: boolean;
-    };
-    track?: {
-      value: unknown;
-      isActive: boolean;
-    };
-    fetchContent?: {
-      value: unknown;
-      isActive: boolean;
-    };
-    init?: {
-      value: unknown;
-      isActive: boolean;
-    };
-  };
+  overrideFunctions: OverrideFunctions;
   overrideExtensions: unknown;
   gpid?: string;
   ref1?: unknown;
@@ -131,25 +94,7 @@ export interface PlayerConfig {
       posType: boolean;
     };
     posDfp1x1: boolean;
-    overrideFunctions: {
-      selected: Array<unknown>;
-      unique: unknown;
-      findWin: unknown;
-      postCreate: unknown;
-      retry: unknown;
-      create: unknown;
-      position: unknown;
-      load: unknown;
-      postStart: unknown;
-      getAttr: unknown;
-      start: unknown;
-      preRun: unknown;
-      run: unknown;
-      target: unknown;
-      track: unknown;
-      fetchContent: unknown;
-      init: unknown;
-    };
+    overrideFunctions: OverrideFunctions;
     overrideExtensions: unknown;
     gpid: unknown;
     ref1: unknown;
@@ -177,8 +122,8 @@ export interface OutstreamPlayer {
   restoreFrom: unknown;
   adsourceOriginId: unknown;
   lastAuditTrailId: unknown;
-  production?: PlayerSettings;
-  staging?: PlayerSettings;
+  production: PlayerSettings;
+  staging: PlayerSettings;
   configsArray: unknown;
   configs?: PlayerConfig[];
   configsInternal: unknown;
@@ -207,8 +152,8 @@ export interface InstreamPlayer {
   restoreFrom: unknown;
   adsourceOriginId?: string;
   lastAuditTrailId?: string;
-  production?: PlayerSettings;
-  staging?: PlayerSettings;
+  production: PlayerSettings;
+  staging: PlayerSettings;
   configsArray: unknown;
   configs?: PlayerConfig[];
   configsInternal: unknown;
